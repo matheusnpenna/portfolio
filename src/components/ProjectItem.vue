@@ -1,12 +1,34 @@
 <template>
-  <div class="project-item-component">
-    {{ props.data.name }}
-  </div>
+  <a
+    :href="data.url"
+    class="project-item-component max-w-sm rounded overflow-hidden shadow-lg"
+    target="_blank"
+  >
+    <img class="w-full" :src="data.picture" alt="Sunset in the mountains">
+    <div class="py-3">
+      <div class="font-bold text-md mb-2">{{  data.name }}</div>
+      <p class="text-gray-700 text-base">
+        {{ data.descripition }}
+      </p>
+    </div>
+    <div class="pt-3 pb-2">
+      <span
+        v-for="(tag, i) in data.tags"
+        :key="`tag-${data.name}-${i}`"
+        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">
+        #{{ tag }}
+      </span>
+    </div>
+  </a>
 </template>
-<script setup>
-  const props = defineProps({
-    data: Object
-  })
-
-  const { data } = toRefs(props);
+<script setup lang="ts">
+  import type { ProjectType } from "@/types";
+  const props = defineProps<{ data: ProjectType }>()
 </script>
+<style lang="scss" scoped>
+.project-item-component {
+  img {
+    border-radius: 4px;
+  }
+}
+</style>
