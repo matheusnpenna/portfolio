@@ -1,6 +1,6 @@
 
 <template>
-  <main class="default-template">
+  <main class="default-template bg-slate-900 px-8">
     <AppHeader />
       <slot></slot>
     <AppFooter />
@@ -14,5 +14,6 @@ import AppHeader from '@/components/AppHeader.vue';
 .default-template {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 </style>
