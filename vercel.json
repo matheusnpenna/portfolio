@@ -1,7 +1,0 @@
-{
-  "framework": "nuxtjs",
-  "devCommand": null,
-  "installCommand": "pnpm install",
-  "buildCommand": "nx build-static portfolio",
-  "outputDirectory": "apps/portfolio/.vercel/output/static"
-}
