@@ -27,6 +27,11 @@
 </script>
 <style lang="scss" scoped>
 .project-item-component {
+  transition: all .3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+
   img {
     border-radius: 4px;
   }
