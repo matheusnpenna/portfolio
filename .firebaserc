@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "penna-dev"
-  }
+  },
+  "targets": {
+    "penna-dev": {
+      "hosting": {
+        "penna-dev": [
+          "penna-dev"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

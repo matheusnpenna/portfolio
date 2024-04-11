@@ -14,6 +14,9 @@ export default defineNuxtConfig({
   alias: {
     '@': resolve(__dirname, "./src/")
   },
+  nitro: {
+    preset: 'vercel-edge',
+  },
   image: {
     dir: './src/assets/img',
   },
