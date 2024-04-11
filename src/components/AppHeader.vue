@@ -10,5 +10,7 @@
   </header>
 </template>
 <style>
-.app-header {}
+.app-header {
+  border-bottom: 1px solid var(--Semantic-Neutral-048, rgba(215, 215, 215, 0.28));
+}
 </style>

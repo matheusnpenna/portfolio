@@ -5,7 +5,7 @@
       Estou disponível através dos contatos abaixo ou, preencha o formulário para ser redirecionado para o whatsapp
     </p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-      <div class="mb-8">
+      <div class="flex flex-col items-center lg:items-start mb-8">
         <h2 class="text-3xl mb-8">Entre com contato comigo</h2>
         <div class="w-full max-w-lg">
           <div class="flex flex-wrap -mx-3 mb-6">
@@ -62,7 +62,7 @@
           </button>
         </div>
       </div>
-      <div class="md:pl-8">
+      <div class="flex flex-col items-center lg:items-start md:pl-8 pt-16 lg:pt-0">
         <h2 class="text-3xl mb-8">Redes sociais</h2>
         <a class="flex items-center justify-start mb-4" href="mailto:dev.matheusnpenna@gmail.com" target="_blank">
           <svg class="mr-4" stroke="currentColor" fill="currentColor" stroke-width="0" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
