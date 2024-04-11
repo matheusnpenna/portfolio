@@ -47,11 +47,13 @@ import AnchorButton from "@/components/AnchorButton";
     .personal-img {
       flex-shrink: 0;
       object-fit: contain;
+      z-index: 1;
     }
     svg {
       position: absolute;
       bottom: 0;
       right: 0;
+      z-index: 0;
     }
   }
 }
