@@ -1,5 +1,5 @@
 <template>
-  <section class="portfolio-component pt-8">
+  <section id="portfolio" class="portfolio-component pt-8">
     <h2 class="text-6xl text-center mb-8">Portfolio</h2>
     <p class="text-md text-center mb-16">
       Confira abaixo alguns dos projetos feitos ao longo do tempo, bem como projetos que contribuí.
