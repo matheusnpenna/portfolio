@@ -14,15 +14,16 @@ export default defineNuxtConfig({
   alias: {
     '@': resolve(__dirname, "./src/")
   },
+  image: {
+    dir: './src/assets/img',
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-  modules: [
-    '@pinia/nuxt',
-  ],
+  modules: ['@pinia/nuxt', "@nuxt/image"],
   pinia: {
     storesDirs: ['./src/stores/**']
   },
