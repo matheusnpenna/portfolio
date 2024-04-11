@@ -1,7 +1,7 @@
 <template>
   <a
     :href="data.url"
-    class="project-item-component max-w-sm rounded overflow-hidden shadow-lg"
+    class="project-item-component max-w-sm rounded overflow-hidden"
     target="_blank"
   >
     <img class="w-full" :src="data.picture" alt="Sunset in the mountains">

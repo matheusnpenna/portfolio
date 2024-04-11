@@ -26,7 +26,7 @@ const props = defineProps<AnchorButtonProps>()
   transform: translateX(-50%);
   animation: bounce 2s ease infinite;
 
-  @media screen {
+  @media screen and (max-width: 991px) {
     bottom: 50%;
   }
 }
