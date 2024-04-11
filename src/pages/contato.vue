@@ -4,7 +4,7 @@
     <p class="text-md text-center mb-16">
       Estou disponível através dos contatos abaixo.
       Se desejar preencha o formulário para ser redirecionado
-      para diretamente para o whatsapp
+      diretamente para o meu whatsapp
     </p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
       <div class="flex flex-col items-center lg:items-start mb-8">
