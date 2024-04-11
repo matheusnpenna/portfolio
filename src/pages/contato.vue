@@ -1,12 +1,14 @@
 <template>
-  <section class="contact-view">
+  <section class="contact-view pt-8">
     <h2 class="text-6xl text-center mb-8">Contato</h2>
     <p class="text-md text-center mb-16">
-      Estou disponível através dos contatos abaixo ou, preencha o formulário para ser redirecionado para o whatsapp
+      Estou disponível através dos contatos abaixo.
+      Se desejar preencha o formulário para ser redirecionado
+      para diretamente para o whatsapp
     </p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
       <div class="flex flex-col items-center lg:items-start mb-8">
-        <h2 class="text-3xl mb-8">Entre com contato comigo</h2>
+        <h2 class="text-3xl mb-8">Entre em contato comigo</h2>
         <div class="w-full max-w-lg">
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
