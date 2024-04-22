@@ -1,5 +1,6 @@
 <template>
   <a :href="`#${anchorId}`" class="btn btn-floating-anchor text-white flex flex-col items-center">
+    <span class="font-normal text-white">{{ label }}</span>
     <svg stroke="currentColor" fill="currentColor" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
       <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
     </svg>
@@ -7,7 +8,8 @@
 </template>
 <script setup lang="ts">
 interface AnchorButtonProps {
-  anchorId: String
+  anchorId: String;
+  label?: string
 }
 const props = defineProps<AnchorButtonProps>()
 </script>
@@ -27,7 +29,7 @@ const props = defineProps<AnchorButtonProps>()
   animation: bounce 2s ease infinite;
 
   @media screen and (max-width: 991px) {
-    bottom: 50%;
+    position: relative;
   }
 }
 </style>
