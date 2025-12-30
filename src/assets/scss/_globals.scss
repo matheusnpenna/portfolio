@@ -1,0 +1,34 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+
+  &.modal-open {
+    font-family: "Roboto", sans-serif !important;
+    background-color: unset !important;
+    display: block !important;
+    padding-right: 0 !important;
+  }
+}
+
+.logo {
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #fff;
+  &.sm { 
+    font-size: 18px;
+  }
+  &.lg { 
+    font-size: 28px;
+  }
+  &.xl { 
+    font-size: 38px;
+  }
+}
