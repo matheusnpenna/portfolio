@@ -1,6 +1,5 @@
 <template>
   <div class="content-view pt-8">
-
     <div class="grid grid-cols-3 gap-20">
       <UCard
         v-for="(post, i) in allPosts"
@@ -9,7 +8,7 @@
       >
         <NuxtImg :src="post.imageUrl" />
         <h4>{{ post.title }}</h4>
-  
+
         <template #footer>
           <small>{{ post.timeToRead }}</small>
           <div class="flex items-center justify-left flex-wrap">

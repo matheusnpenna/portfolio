@@ -1,21 +1,12 @@
 <template>
-  <main class="default-template bg-slate-900 px-8">
-    <AppHeader />
-    <slot />
-    <AppFooter />
-  </main>
+  <div className="dark min-h-screen bg-background text-foreground">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <script setup>
-import AppFooter from '~/components/AppFooter.vue'
-import AppHeader from '~/components/AppHeader.vue'
 </script>
-
-<style>
-.default-template {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow: hidden;
-}
-</style>
