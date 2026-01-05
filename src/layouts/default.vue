@@ -1,7 +1,7 @@
 <template>
   <div className="dark min-h-screen bg-background text-foreground">
     <Header />
-    <main>
+    <main class="py-24">
       <slot />
     </main>
     <Footer />

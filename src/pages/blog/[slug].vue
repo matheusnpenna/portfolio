@@ -1,8 +1,8 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script lang="ts" setup>
 const route = useRoute()
+const slug = (route.params.slug as string).toLocaleLowerCase()
 const { data: page } = await useAsyncData(route.path, () => {
-  return queryCollection('content').path(route.params.slug).first()
+  return queryCollection('content').path(`/${slug}`).first()
 })
 useSeoMeta({
   title: page.value?.title || 'Blog - Desenvolvimento de software',
@@ -16,7 +16,10 @@ useSeoMeta({
       v-if="page"
       :value="page"
     />
-    <p v-else class="py-48 bg-red">
+    <p
+      v-else
+      class="bg-red"
+    >
       Artigo não encontrado: {{ route.params.slug }}
     </p>
   </div>
