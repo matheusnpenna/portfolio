@@ -9,9 +9,11 @@ export default defineContentConfig({
         title: z.string(),
         description: z.string(),
         date: z.date(),
-        tags: z.string(),
-        timeToRead: z.string(),
-        imageUrl: z.string()
+        category: z.string(),
+        slug: z.string(),
+        readTime: z.string(),
+        imageUrl: z.string(),
+        featured: z.boolean()
       })
     })
   }

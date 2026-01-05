@@ -21,7 +21,6 @@ const currentYear = new Date().getFullYear()
           </p>
         </div>
 
-        {/* Quick Links */}
         <div class="space-y-4">
           <h4 class="font-bold">
             Navegação
@@ -51,17 +50,22 @@ const currentYear = new Date().getFullYear()
             >
               Blog
             </a>
+            <a
+              href="#portfolio"
+              class="text-sm text-muted-foreground hover:text-primary transition-colors"
+            >
+              Portfolio
+            </a>
           </nav>
         </div>
 
-        {/* Social */}
         <div class="space-y-4">
           <h4 class="font-bold">
             Social
           </h4>
           <nav class="flex flex-col space-y-2">
             <a
-              href="https://github.com"
+              href="https://github.com/matheusnpenna"
               target="_blank"
               rel="noopener noreferrer"
               class="text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -69,7 +73,7 @@ const currentYear = new Date().getFullYear()
               GitHub
             </a>
             <a
-              href="https://linkedin.com"
+              href="linkedin.com/in/matheuspenna"
               target="_blank"
               rel="noopener noreferrer"
               class="text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -77,7 +81,7 @@ const currentYear = new Date().getFullYear()
               LinkedIn
             </a>
             <a
-              href="mailto:contato@matheuspenna.com"
+              href="mailto:dev.matheusnpenna@gmail.com"
               class="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               Email
@@ -85,22 +89,21 @@ const currentYear = new Date().getFullYear()
           </nav>
         </div>
 
-        {/* Contact */}
         <div class="space-y-4">
           <h4 class="font-bold">
             Contato
           </h4>
           <div class="space-y-3">
             <a
-              href="mailto:contato@matheuspenna.com"
+              href="mailto:dev.matheusnpenna@gmail.com"
               class="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail :size="18" />
-              <span>contato@matheuspenna.com</span>
+              <span>dev.matheusnpenna@gmail.com</span>
             </a>
             <div class="flex gap-3 pt-2">
               <a
-                href="https://github.com"
+                href="https://github.com/matheusnpenna"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="p-2 border border-border rounded-lg hover:bg-secondary hover:border-primary transition-all hover:scale-110"
@@ -108,7 +111,7 @@ const currentYear = new Date().getFullYear()
                 <Github :size="20" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/matheuspenna"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="p-2 border border-border rounded-lg hover:bg-secondary hover:border-primary transition-all hover:scale-110"
@@ -128,7 +131,7 @@ const currentYear = new Date().getFullYear()
           Feito com <Heart
             :size="16"
             class-name="text-primary fill-primary"
-          /> usando Vue, Next, Tailwind CSS
+          /> usando Vue, Nuxt, Tailwind CSS
         </p>
       </div>
     </div>

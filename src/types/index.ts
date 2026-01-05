@@ -1,12 +1,8 @@
-interface ProjectType {
-  name: String;
-  description: String;
-  picture: String;
-  tags: String[];
-  url: String;
-}
-
-
-export {
-  ProjectType
+export interface TProject {
+  id: string
+  name: string
+  description: string
+  picture: string
+  tags: string[]
+  url: string
 }

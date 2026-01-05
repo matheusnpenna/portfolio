@@ -44,6 +44,12 @@ const isMenuOpen = ref(false)
             Blog
           </a>
           <a
+            href="#portfolio"
+            class="text-foreground hover:text-primary transition-colors"
+          >
+            Portfolio
+          </a>
+          <a
             href="#contact"
             class="text-foreground hover:text-primary transition-colors"
           >

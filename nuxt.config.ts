@@ -18,7 +18,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     ['@pinia/nuxt', {
       storesDirs: ['./src/stores/**']
-    }]
+    }],
+    'motion-v/nuxt'
   ],
 
   plugins: ['./src/plugins/firebase.client'],
