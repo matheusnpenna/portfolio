@@ -1,7 +1,7 @@
 import { createError, readBody } from 'h3'
 import type { H3Event, H3Error } from 'h3'
 import type { TMailerConfig } from '../types'
-import getContactTemplate from '../templates/Mail'
+import getContactTemplate from '../templates/mail'
 import NodeMailer from 'nodemailer'
 
 const MailController = {
@@ -26,8 +26,7 @@ const MailController = {
     if (!body.from) return createError({ statusCode: 400, message: 'O parâmetro "from" não pode ser vazio' })
     if (!body?.to) return createError({ statusCode: 400, message: 'O parâmetro "to" não pode ser vazio' })
     if (!body?.subject) return createError({ statusCode: 400, message: 'O parâmetro "subject" não pode ser vazio' })
-    if (!body?.text) return createError({ statusCode: 400, message: 'O parâmetro "text" não pode estar vazio' })
-    if (!body?.data) return createError({ statusCode: 400, message: 'O parâmetro "data" não pode estar vazio' })
+    if (!body?.text && !body?.data) return createError({ statusCode: 400, message: 'O parâmetro "text" e o parâmetro "data" não podem estar vazios' })
 
     const isSMTPConnected = await transporter.verify()
 
@@ -37,7 +36,7 @@ const MailController = {
 
     try {
       const resp = await transporter.sendMail({
-        from: `"Contato do site pessoal e portfólio" <${body.from}>'`,
+        from: `"Novo contato vindo do site" <${body.from}>'`,
         to: body.to,
         subject: body.subject,
         html: getContactTemplate(body.data)

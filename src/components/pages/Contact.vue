@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { motion } from 'motion-v'
 import { Mail, MapPin, Send, CheckCircle2, AlertCircle, Instagram } from 'lucide-vue-next'
+import useMailAPI from '~/composable/api/mail'
+import useNotification from '~/composable/useNotification'
+
+const { sendMail } = useMailAPI()
+const notification = useNotification()
 
 const formData = reactive({
   name: '',
@@ -11,10 +16,30 @@ const formData = reactive({
 const status = ref<'idle' | 'success' | 'error'>('idle')
 const isLoading = ref(false)
 
-function handleSubmit() {
+async function handleSubmit() {
   isLoading.value = true
 
-  // Submit the request
+  try {
+    await sendMail({
+      from: formData.email,
+      to: 'dev.matheuspenna@gmail.com',
+      subject: `[Contato do site] ${formData.subject}`,
+      data: formData
+    })
+
+    notification.success({
+      title: 'Contato enviado',
+      description: 'Sua mensagem foi enviada com sucesso! Entrarei em contato em breve.'
+    })
+  } catch (e) {
+    notification.error({
+      title: 'Erro ao enviar contato',
+      description: 'Ocorreu um erro ao enviar sua mensagem. Tente novamente mais tarde',
+      error: e as Error
+    })
+  } finally {
+    isLoading.value = false
+  }
 }
 </script>
 
