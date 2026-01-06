@@ -44,6 +44,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     MAIL_SMTP: process.env.MAIL_SMTP || 'smtp.ethereal.email',
     MAIL_SECURE: process.env.MAIL_SECURE,
+    MAIL_PORT: process.env.MAIL_PORT || 465,
     MAIL_USER: process.env.MAIL_USER || 'maddison53@ethereal.email',
     MAIL_PASS: process.env.MAIL_PASS || 'jn7jnAPss4f63QBp6D',
     public: {
