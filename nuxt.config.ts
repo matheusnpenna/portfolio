@@ -42,6 +42,10 @@ export default defineNuxtConfig({
   css: ['./assets/css/app.css', './assets/scss/app.scss'],
 
   runtimeConfig: {
+    MAIL_SMTP: process.env.MAIL_SMTP || 'smtp.ethereal.email',
+    MAIL_SECURE: process.env.MAIL_SECURE,
+    MAIL_USER: process.env.MAIL_USER || 'maddison53@ethereal.email',
+    MAIL_PASS: process.env.MAIL_PASS || 'jn7jnAPss4f63QBp6D',
     public: {
       FB_API_KEY: 'AIzaSyA1TQKLvsWZ_SJeSmJ5v72qUYbIjUax8hk',
       FB_AUTH_DOMAIN: 'penna-dev.firebaseapp.com',
@@ -54,7 +58,6 @@ export default defineNuxtConfig({
   },
 
   srcDir: 'src/',
-
   routeRules: {
     '/': { prerender: true }
   },

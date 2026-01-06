@@ -1,7 +1,20 @@
 <script setup lang="ts">
 import { Menu, X } from 'lucide-vue-next'
 
+const route = useRoute()
+
 const isMenuOpen = ref(false)
+const navLinks = computed(() => {
+  const blogHref = route.path.includes('/blog/') ? '/blog' : '#blog'
+  return [
+    { active: false, href: '/', label: 'Início' },
+    { active: route.path.includes('#about'), href: '/#about', label: 'Sobre' },
+    { active: route.path.includes('#skills'), href: '/#skills', label: 'Habilidades' },
+    { active: route.path.includes('/blog/'), href: blogHref, label: 'Blog' },
+    { active: route.path.includes('#portfolio'), href: '/#portfolio', label: 'Portfolio' },
+    { active: route.path.includes('#contact'), href: '/#contact', label: 'Contato' }
+  ]
+})
 </script>
 
 <template>
@@ -20,40 +33,13 @@ const isMenuOpen = ref(false)
 
         <nav class="hidden md:flex items-center gap-8">
           <a
-            href="#home"
+            v-for="(link, i) in navLinks"
+            :key="i"
+            :href="link.href"
             class="text-foreground hover:text-primary transition-colors"
+            :class="{ 'font-bold': link.active }"
           >
-            Início
-          </a>
-          <a
-            href="#about"
-            class="text-foreground hover:text-primary transition-colors"
-          >
-            Sobre
-          </a>
-          <a
-            href="#skills"
-            class="text-foreground hover:text-primary transition-colors"
-          >
-            Habilidades
-          </a>
-          <a
-            href="#blog"
-            class="text-foreground hover:text-primary transition-colors"
-          >
-            Blog
-          </a>
-          <a
-            href="#portfolio"
-            class="text-foreground hover:text-primary transition-colors"
-          >
-            Portfolio
-          </a>
-          <a
-            href="#contact"
-            class="text-foreground hover:text-primary transition-colors"
-          >
-            Contato
+            {{ link.label }}
           </a>
         </nav>
 

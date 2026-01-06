@@ -4,6 +4,7 @@ import About from '~/components/pages/About.vue'
 import Skills from '~/components/pages/Skills.vue'
 import Blog from '~/components/pages/Blog.vue'
 import Projects from '~/components/pages/Projects.vue'
+import Contact from '~/components/pages/Contact.vue'
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import Projects from '~/components/pages/Projects.vue'
     <Skills />
     <Blog />
     <Projects />
+    <Contact />
   </div>
 </template>

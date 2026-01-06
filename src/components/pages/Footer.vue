@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Github, Linkedin, Mail, Heart } from 'lucide-vue-next'
+import { Github, Linkedin, Mail, Heart, Instagram } from 'lucide-vue-next'
 
 const currentYear = new Date().getFullYear()
 </script>
@@ -81,6 +81,14 @@ const currentYear = new Date().getFullYear()
               LinkedIn
             </a>
             <a
+              href="https://www.instagram.com/penna.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm text-muted-foreground hover:text-primary transition-colors"
+            >
+              Instagram
+            </a>
+            <a
               href="mailto:dev.matheusnpenna@gmail.com"
               class="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
@@ -117,6 +125,14 @@ const currentYear = new Date().getFullYear()
                 class="p-2 border border-border rounded-lg hover:bg-secondary hover:border-primary transition-all hover:scale-110"
               >
                 <Linkedin :size="20" />
+              </a>
+              <a
+                href="https://www.instagram.com/penna.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="p-2 border border-border rounded-lg hover:bg-secondary hover:border-primary transition-all hover:scale-110"
+              >
+                <Instagram :size="20" />
               </a>
             </div>
           </div>
