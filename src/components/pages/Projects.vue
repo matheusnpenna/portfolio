@@ -1,7 +1,7 @@
 <template>
   <section
     id="portfolio"
-    class="portfolio-component pt-8 pb-16"
+    class="py-24 portfolio-component"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-6xl text-center mb-8">

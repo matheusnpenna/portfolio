@@ -54,13 +54,13 @@ export default defineNuxtConfig({
     MAIL_USER: process.env.MAIL_USER || 'maddison53@ethereal.email',
     MAIL_PASS: process.env.MAIL_PASS || 'jn7jnAPss4f63QBp6D',
     public: {
-      FB_API_KEY: 'AIzaSyA1TQKLvsWZ_SJeSmJ5v72qUYbIjUax8hk',
-      FB_AUTH_DOMAIN: 'penna-dev.firebaseapp.com',
-      FB_PROJECT_ID: 'penna-dev',
-      FB_STORAGE_BUCKET: 'penna-dev.appspot.com',
-      FB_MESSAGING_SENDER_ID: '624512271304',
-      FB_APP_ID: '1:624512271304:web:d6af421d5871cf2cf236fd',
-      FB_MEASUREMENT_ID: 'G-W02E9SPMEP'
+      FB_API_KEY: process.env.FB_API_KEY,
+      FB_AUTH_DOMAIN: process.env.FB_AUTH_DOMAIN,
+      FB_PROJECT_ID: process.env.FB_PROJECT_ID,
+      FB_STORAGE_BUCKET: process.env.FB_STORAGE_BUCKET,
+      FB_MESSAGING_SENDER_ID: process.env.FB_MESSAGING_SENDER_ID,
+      FB_APP_ID: process.env.FB_APP_ID,
+      FB_MEASUREMENT_ID: process.env.FB_MEASUREMENT_ID
     }
   },
 

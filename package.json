@@ -8,7 +8,10 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "vercel:build": "npx vercel build",
+    "vercel:deploy": "npx vercel deploy --prebuilt",
+    "vercel:prod": "npx vercel --prod"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.82",
@@ -20,6 +23,7 @@
     "@nuxt/ui": "^4.3.0",
     "@pinia/nuxt": "^0.11.3",
     "@unhead/vue": "^2.0.19",
+    "better-sqlite3": "^12.5.0",
     "firebase": "^12.7.0",
     "lucide-vue-next": "^0.562.0",
     "nodemailer": "^7.0.12",
