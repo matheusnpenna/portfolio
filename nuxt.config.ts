@@ -41,6 +41,12 @@ export default defineNuxtConfig({
 
   css: ['./assets/css/app.css', './assets/scss/app.scss'],
 
+  content: {
+    experimental: {
+      nativeSqlite: true
+    }
+  },
+
   runtimeConfig: {
     MAIL_SMTP: process.env.MAIL_SMTP || 'smtp.ethereal.email',
     MAIL_SECURE: process.env.MAIL_SECURE,
